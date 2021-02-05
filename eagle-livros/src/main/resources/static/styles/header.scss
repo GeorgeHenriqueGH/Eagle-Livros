@@ -1,0 +1,26 @@
+@import  "functions";
+@import "colors";
+
+header {
+    background-color: $azul;
+    box-shadow: -2px 2px 16px 0px rgba(0,0,0,0.75);
+    div.content-logo {
+        width: 100%;
+        @include flex-display(2);
+        padding: 10px;
+    }
+    div.name-header {
+        margin-left: 25px;
+        width: 100%;
+        h1 {
+            @include font(3);
+            font-size: 23pt;
+            color: $laranja;
+        }
+        h3 {
+            @include font(1);
+            font-size: 12pt;
+            color: $amarelo;
+        }
+    }
+}   

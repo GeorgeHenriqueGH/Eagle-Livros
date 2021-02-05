@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" 
+	  xmlns:th="http://www.thymeleaf.org" layout:decorate="~{layout}">
+        <!-- Login -->
+		<div layout:fragment="content">
+			<main>
+            	<div class="login">
+                	<img class="login-profile" th:src="@{/images/user-avatar.png}" alt="Usuário" title="Usuário"/>
+                	<input class="input" type="text" name="name-text" id="nickname" placeholder="Digite seu nome..."/>
+                	<input class="input" type="password" name="password-text" id="password" placeholder="Digite sua senha..."/>
+                	<div class="btn-login">
+                    	<input id="entrar" class="btn-input" type="submit" value="Entrar"/>
+                    	<input id="cancelar" class="btn-input" type="submit" value="Cancelar">
+                	</div>
+                	<input id="criar-conta" class="btn-input" type="submit" value="criar conta"/>
+            	</div>
+        	</main>
+		</div>
+    </body>
+</html>

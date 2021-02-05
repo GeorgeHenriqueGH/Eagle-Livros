@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" 
+	  xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link rel="shortcut icon" type="image/x-icon" th:href="@{/images/icon.png}"/>
+        <link rel="stylesheet" type="text/css" th:href="@{/styles/styles.css}"/>
+        <title>Livros</title>
+    </head>
+    <body>
+        <!-- Cabeçalho do site -->
+        <header>
+            <div class="content-logo">
+                <img class="icon" th:src="@{/images/icon.png}" alt="Eagle Livros" title="Eagle Livros"/>
+                <div class="name-header">
+                    <h1>Eagle Livros</h1>
+                    <h3>Melhores E-books.</h3>
+                </div>
+            </div>
+        </header>
+        <!-- Conteúdo -->
+        <div layout:fragment="content"></div>
+        <footer>
+            <h4>Feito com HTML, SCSS, JavaScript, Spring MVC e &#x2764;.</h4>
+            <h5>Feito por George Henrique Capitulino Cardoso Campos.</h5>
+        </footer>
+    </body>
+</html>

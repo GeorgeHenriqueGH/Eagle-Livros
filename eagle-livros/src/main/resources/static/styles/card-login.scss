@@ -1,0 +1,75 @@
+@import "functions";
+@import "colors";
+
+main {
+    margin-top: 1.5%;
+    @include flex-display(3);
+    padding: 30px;
+}
+
+div.login { 
+    @include flex-display(3);
+    background-color: rgba($azul-rgb, 0.7);
+    width: 60%; 
+    height: 30%;
+    padding: 50px;
+    border-radius: 25px;
+    box-shadow: -2px 2px 23px 0px rgba(0,0,0,0.75);
+}
+
+img.login-profile { margin-bottom: 5%; }
+
+input.input {
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 20px;
+    width: 60%;
+    height: 30%;
+    outline: 0px;
+    padding: 10px;
+    @include font(3);
+    font-size: 15px;
+    box-shadow: -2px 2px 20px -4px rgba(0,0,0,0.75);
+}
+
+div.btn-login {
+    margin-top: 3%;
+    margin-left: 5.5%;
+    width: 50%;
+}
+
+input.btn-input[type=submit] {
+    margin-bottom: 10px;
+    margin-right: 20px;
+    border: none;
+    border-radius: 20px;
+    width: 40%;
+    height: 30%;
+    outline: 0px;
+    padding: 10px;
+    @include font(3);
+    font-size: 15px;
+    box-shadow: -2px 2px 20px -4px rgba(0,0,0,0.75);
+}
+
+input#entrar {
+    background-color: $green;
+    &:hover {
+        background-color: $azul;
+        color: $bege;
+    }
+}
+
+input#cancelar {
+    background-color: $laranja;
+    &:hover {
+        background-color: $marron;
+    }
+}
+
+input#criar-conta {
+    background-color: $amarelo;
+    &:hover {
+        background-color: $marron;
+    }
+}

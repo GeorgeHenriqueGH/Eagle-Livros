@@ -1,0 +1,23 @@
+@import "functions";
+@import "colors";
+
+footer {
+    @include flex-display(3);
+    background-color: $azul;
+    width: 100%;
+    padding: 10px;
+    box-shadow: -2px -3px 20px -4px rgba(0,0,0,0.75);
+}
+ 
+h4 {
+    @include font(3);
+    font-size: 14pt;
+    color: $laranja;
+    line-height: 30px
+}
+
+h5 {
+    @include font(1);
+    font-size: 10pt;
+    color: $amarelo;
+}
